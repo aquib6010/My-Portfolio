@@ -25,38 +25,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       font-size: 3rem;
       font-weight: bold;
       letter-spacing: 10px;
       margin-bottom: 30px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      white-space: nowrap;
-      gap: 10px;
     }
 
     .letter {
       margin: 0 5px;
-      font-size: 80px;
-      color: #0b5394;
-      flex-shrink: 0;
-      min-width: 80px;
+      font-size: 9vw;
     }
 
     .photo-letter {
-      width: 80px;
-      height: 80px;
+      width: 9vw;
+      height: 9vw;
       border-radius: 50%;
       object-fit: cover;
       margin: 0 5px;
       border: 3px solid #0077cc;
-      font-size: 80px;
-      flex-shrink: 0;
-      min-width: 80px;
     }
 
     #photu {
-      display: none;
+      display: none; /* Hidden unused */
     }
 
     #briefbio {
@@ -115,41 +106,51 @@
       color: #0077cc;
     }
 
+    /* --------- Responsive Styles --------- */
     @media (max-width: 768px) {
-      body {
-        padding: 15px;
-      }
-
       .welcome {
-        font-size: 2rem;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        font-size: 2.2rem;
+        letter-spacing: 6px;
+        flex-wrap: wrap;
       }
 
-      .letter, .photo-letter {
-        font-size: 60px;
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
+      .photo-letter {
+        width: 50px;
+        height: 50px;
       }
 
       #briefbio {
-        padding: 15px 20px;
         font-size: 1rem;
+        padding: 18px 20px;
       }
 
       h6 {
         font-size: 1rem;
       }
 
-      ol {
-        max-width: 100%;
+      ol li {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .welcome {
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+      }
+
+      .photo-letter {
+        width: 40px;
+        height: 40px;
+      }
+
+      #briefbio {
+        font-size: 0.95rem;
+        padding: 15px 15px;
       }
 
       ol li {
         padding: 10px 14px;
-        font-size: 0.95rem;
       }
     }
   </style>
@@ -169,9 +170,7 @@
   </div>
 
   
-  <div>
-    <img src="portfolio.PNG" alt="that's me" id="photu">
-  </div>
+  <img src="portfolio.PNG" alt="that's me" id="photu">
 
   
   <div>
@@ -184,19 +183,20 @@
     </p>
   </div>
 
-  
+
   <div>
     <h6>EXPLORE</h6>
     <ol>
       <li><a href="aboutme.html"> About Me </a></li>
       <li><a href="projects.html"> Projects </a></li>
-      <li><a href="experiences.html"> Experiences</a></li>
+      <li><a href="experiences.html"> Experiences </a></li>
       <li><a href="contact.html"> Contact Me </a></li>
     </ol>
   </div>
 
 </body>
 </html>
+
 
 
 
