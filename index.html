@@ -107,6 +107,44 @@
     ol li a:hover {
       color: #0077cc;
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      .welcome {
+        font-size: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .letter, .photo-letter {
+        font-size: 80px;
+        width: 80px;
+        height: 80px;
+      }
+
+      #briefbio {
+        padding: 15px 20px;
+        font-size: 1rem;
+      }
+
+      h6 {
+        font-size: 1rem;
+      }
+
+      ol {
+        max-width: 100%;
+      }
+
+      ol li {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -152,4 +190,5 @@
 
 </body>
 </html>
+
 
