@@ -29,13 +29,18 @@
       font-weight: bold;
       letter-spacing: 10px;
       margin-bottom: 30px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; 
+      overflow-x: auto;   
+      white-space: nowrap;
+      gap: 10px;
     }
 
     .letter {
       margin: 0 5px;
       font-size: 150px;
       color: #0b5394;
+      flex-shrink: 0;
+      min-width: 150px;
     }
 
     .photo-letter {
@@ -46,10 +51,12 @@
       margin: 0 5px;
       border: 3px solid #0077cc;
       font-size: 150px;
+      flex-shrink: 0;
+      min-width: 150px;
     }
 
     #photu {
-      display: none; /* Hide original image used earlier */
+      display: none; 
     }
 
     #briefbio {
@@ -108,7 +115,7 @@
       color: #0077cc;
     }
 
-    /* Responsive styles */
+    
     @media (max-width: 768px) {
       body {
         padding: 15px;
@@ -117,14 +124,15 @@
       .welcome {
         font-size: 2rem;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
       }
 
       .letter, .photo-letter {
         font-size: 80px;
         width: 80px;
         height: 80px;
+        min-width: 80px;
       }
 
       #briefbio {
@@ -149,7 +157,7 @@
 </head>
 <body>
 
-  <!-- Welcome with image as 'O' -->
+  
   <div class="welcome">
     <span class="letter">W</span>
     <span class="letter">E</span>
@@ -161,12 +169,12 @@
     <span class="letter">!</span>
   </div>
 
-  <!-- Hidden original image -->
+  
   <div>
     <img src="portfolio.PNG" alt="that's me" id="photu">
   </div>
 
-  <!-- Bio -->
+  
   <div>
     <p id="briefbio">
       Hey there, Myself <strong>Aquib Aquil</strong>. I’m a first-year BTech student in the BSBE department at IIT Guwahati with
@@ -177,7 +185,7 @@
     </p>
   </div>
 
-  <!-- Navigation -->
+  
   <div>
     <h6>EXPLORE</h6>
     <ol>
