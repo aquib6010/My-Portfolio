@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiences and Experiencing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: beige;
+      color: black;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #0b5394;
+      border-bottom: 3px solid #0b5394;
+      padding-bottom: 8px;
+    }
+
+    .exp-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .exp-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .exp-img {
+      flex: 0 0 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #0b5394;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .exp-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .exp-text {
+      flex: 1;
+      background-color: #f1f7fd;
+      padding: 20px 25px;
+      border-radius: 12px;
+      border-left: 6px solid #0b5394;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .exp-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .exp-block {
+        flex-direction: column !important;
+        align-items: center;
+      }
+
+      .exp-img {
+        margin-bottom: 20px;
+      }
+
+      .exp-text {
+        border-left: none;
+        border-top: 6px solid #0b5394;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Experiences</h2>
+
+    <div class="exp-block">
+      <div class="exp-img">
+        <img src="headboy.png" alt="Head Boy">
+      </div>
+      <div class="exp-text">
+        <p>
+          I served as the Head Boy during my 11th and 12th grades, which helped me develop valuable skills such as leadership,
+          public speaking, and team management.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-img">
+        <img src="alcher.png" alt="Alcheringa">
+      </div>
+      <div class="exp-text">
+        <p>
+          In my first year at IIT Guwahati, I worked with the Corporate Relations and Marketing Team of Alcheringa—
+          North East India's largest cultural festival. I actively reached out to national and city-level corporate firms
+          to secure sponsorships. This experience taught me essential skills such as corporate communication, persuasive
+          pitching, and diplomatic negotiation.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-img">
+        <img src="eceell.jpg" alt="E-Cell">
+      </div>
+      <div class="exp-text">
+        <p>
+          At the end of my first year, I was selected for the E-Cell team of IIT Guwahati through a rigorous selection process.
+          I currently serve as a Senior Executive, where I primarily contribute to the "Disrupt" module. This involves addressing 
+          real-world problems faced by people and transforming them into potential startup solutions.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-img">
+        <img src="swc.png" alt="SWC">
+      </div>
+      <div class="exp-text">
+        <p>
+          Recently, at the beginning of my second year at IIT Guwahati, I will be joining the App Development Team of the 
+          Student Web Committee (SWC) after successfully completing their Flutter workshop during the summer vacation.
+          I look forward to enhancing my skills in cross-platform mobile development using Flutter, improving my UI/UX 
+          design capabilities, collaborating on real-time projects, and gaining hands-on experience in version control,
+          API integration, and agile development practices.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
+

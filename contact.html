@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI';
+      background:beige;
+      color: black;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #0b5394;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #0b5394;
+      padding-bottom: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      padding: 10px 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      margin-top: 8px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #0b5394;
+      outline: none;
+    }
+
+    .error {
+      color: #d32f2f;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #0b5394;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #083e75;
+    }
+
+    .linkedin-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .linkedin-section a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .linkedin-section a:hover {
+      color: #004182;
+    }
+
+    .linkedin-icon {
+      width: 28px;
+      height: 28px;
+      fill: #0a66c2;
+      transition: fill 0.3s ease;
+    }
+
+    .linkedin-section a:hover .linkedin-icon {
+      fill: #004182;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" onsubmit="return isFormcorrect()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <div class="error" id="nameError"></div>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <div class="error" id="emailError"></div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+      <div class="error" id="messageError"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="linkedin-section">
+      <a href="https://www.linkedin.com/in/aquibaquil6010/" target="_blank">
+        <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
+          <path d="M34,20.67v12.87H26.8V21.5c0-2.33-.83-3.93-2.9-3.93-1.58,0-2.52,1.06-2.94,2.09-.15.36-.19.86-.19,1.36v12.52H13.57s.09-20.3,0-22.41h7.2v3.18c-.01.02-.03.04-.04.06h.04v-.06c.96-1.49,2.68-3.61,6.54-3.61C30.27,10.7,34,13.87,34,20.67ZM4.24,0C1.91,0,0,1.89,0,4.21S1.91,8.42,4.24,8.42c2.31,0,4.21-1.89,4.21-4.21S6.55,0,4.24,0ZM0.44,33.54H8V11.13H0.44V33.54Z"/>
+        </svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function isFormcorrect() {
+      let correct = true;
+
+      document.getElementById("nameError").innerText = "";
+      document.getElementById("emailError").innerText = "";
+      document.getElementById("messageError").innerText = "";
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required.";
+        correct = false;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (email === "") {
+        document.getElementById("emailError").innerText = "Email is required.";
+        correct = false;
+      } else if (!emailPattern.test(email)) {
+        document.getElementById("emailError").innerText = "Invalid email format.";
+        correct = false;
+      }
+
+      if (message.length < 10) {
+        document.getElementById("messageError").innerText = "Message must be at least 10 characters.";
+        correct = false;
+      }
+
+      return correct;
+    }
+  </script

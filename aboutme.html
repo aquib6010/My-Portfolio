@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Segoe UI;
+        background-color: beige;
+            color:black;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: #005f99;
+            margin-bottom: 20px;
+            border-left: 6px solid #005f99;
+            padding-left: 15px;
+        }
+
+        .section h4 {
+            font-size: 1.3rem;
+            color: #0077cc;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #0077cc;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skill-box {
+            flex: 1 1 45%;
+            background-color: #f8fbff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        
+        }
+
+        ul li:hover, ol li:hover {
+            background-color: #e6f3ff;
+        }
+
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+  
+        <div class="section">
+            <h3>Background</h3>
+            <p>
+                I come from a strong academic background. I completed my matriculation and intermediate education from 
+                <strong>Guru Nanak Higher Secondary School in my hometown Ranchi, Jharkhand, securing 86% and 82%</strong> respectively.
+                Following that, I began preparing for the prestigious <strong>JEE</strong> exam, which I cleared on my first attempt through
+                dedication and effort.
+            </p>
+            <p>
+                I also participated in Olympiads like <strong>NSEP, NSEC, ISO, and IOQM</strong>. Although I didn’t clear them, they played a vital role 
+                in shaping my academic curiosity and critical thinking.
+            </p>
+            <p>
+                Outside academics, I enjoyed playing <strong>cricket</strong> and <strong>football</strong> during my school days, which helped me 
+                develop leadership and teamwork skills.
+            </p>
+        </div>
+
+
+        <div class="section">
+            <h3>Skills</h3>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h4>Additional Skills</h4>
+                    <p>
+                        One of my strengths is attention to detail. For instance, I often notice the background elements of a photo rather than 
+                        the main subject — a subtle trait that reflects my observational ability and analytical mindset.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Interests</h3>
+            <p>
+                I’m passionate about building innovative startups that solve real-world problems. Web development currently excites me 
+                the most, and this website is my first hands-on project.
+            </p>
+            <p>
+                Over the past year, I’ve explored new hobbies like sports and music. Recently, I’ve been learning:
+            </p>
+            <ol>
+                <li>Sport: Table Tennis</li>
+                <li>Musical Instrument: Piano</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

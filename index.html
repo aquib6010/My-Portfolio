@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: beige;
+      color: black;
+      padding: 30px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .welcome {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .letter {
+      margin: 0 5px;
+      font-size: 150px;
+      color: #0b5394;
+    }
+
+    .photo-letter {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 5px;
+      border: 3px solid #0077cc;
+      font-size: 150px;
+    }
+
+    #photu {
+      display: none; /* Hide original image used earlier */
+    }
+
+    #briefbio {
+      background-color: white;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+
+    #briefbio strong {
+      color: #0077cc;
+    }
+
+    h6 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #0077cc;
+      letter-spacing: 1px;
+    }
+
+    ol {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    ol li {
+      background-color: #ffffff;
+      margin: 10px 0;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.2s ease, background-color 0.3s;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    ol li:hover {
+      background-color: #e6f0fa;
+      transform: scale(1.02);
+    }
+
+    ol li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    ol li a:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome with image as 'O' -->
+  <div class="welcome">
+    <span class="letter">W</span>
+    <span class="letter">E</span>
+    <span class="letter">L</span>
+    <span class="letter">C</span>
+    <img src="portfolio.PNG" alt="Photo as O" class="photo-letter">
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+    <span class="letter">!</span>
+  </div>
+
+  <!-- Hidden original image -->
+  <div>
+    <img src="portfolio.PNG" alt="that's me" id="photu">
+  </div>
+
+  <!-- Bio -->
+  <div>
+    <p id="briefbio">
+      Hey there, Myself <strong>Aquib Aquil</strong>. I’m a first-year BTech student in the BSBE department at IIT Guwahati with
+      a core interest in <strong>building new startups</strong>. Currently, I’m actively refining my skills in <strong>Web & App 
+      Development</strong>. In my spare time, I love to learn new musical instruments (currently piano) and reading
+      valuable books. Alongside academics, I enjoy fitness and self-improvement, maintaining a balanced 
+      lifestyle with focused goals in health, performance, and growth.
+    </p>
+  </div>
+
+  <!-- Navigation -->
+  <div>
+    <h6>EXPLORE</h6>
+    <ol>
+      <li><a href="aboutme.html"> About Me </a></li>
+      <li><a href="projects.html"> Projects </a></li>
+      <li><a href="experiences.html"> Experiences</a></li>
+      <li><a href="contact.html"> Contact Me </a></li>
+    </ol>
+  </div>
+
+</body>
+</html>
+
